@@ -35,7 +35,7 @@
     <script src="https://cdn.webrtc-experiment.com/getScreenId.js"></script>
     <script src="https://cdn.webrtc-experiment.com/screen.js"></script>
     <script>
-      const peer = new Peer('ignacius', { host: 'localhost', port: 8000 });
+      const peer = new Peer('ignacius');
       let stream;
       const getStream = async () => {
         const res = await navigator.mediaDevices.getUserMedia({

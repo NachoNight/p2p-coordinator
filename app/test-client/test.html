@@ -29,7 +29,7 @@
     <video autoplay controls id="output"></video>
     <script src="https://unpkg.com/peerjs@1.0.0/dist/peerjs.min.js"></script>
     <script>
-      const peer = new Peer({ host: 'localhost', port: 8000 });
+      const peer = new Peer();
       const connection = peer.connect('ignacius');
       connection.on('open', () => {
         console.log('Connected');
